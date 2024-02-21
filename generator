@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+import sys
+import random
+
+
+def generate_expression():
+    """Generate a random expression between two full numbers from interval [1, 1000]."""
+    a = random.randint(1, 1000)
+    b = random.randint(1, 1000)
+    op = random.choice(["+", "-", "*", "/"])
+    return f"{a}{op}{b}"
+
+
+def main():
+    """Main function."""
+    # Display user manual
+    if len(sys.argv) != 2:
+        print("Usage: ./generator <number_of_expressions>")
+        sys.exit(1)
+    # Make sure to receive a positive integer
+    try:
+        num_expressions = int(sys.argv[1])
+        if num_expressions <= 0:
+            raise ValueError("Number of expressions must be a positive integer.")
+        if num_expressions > 500:
+            raise ValueError("I'm not sure I can perform so many computations")
+    except ValueError as e:
+        print(e)
+        sys.exit(1)
+    # Loop and display
+    for _ in range(num_expressions):
+        print(generate_expression())
+
+
+if __name__ == "__main__":
+    main()
