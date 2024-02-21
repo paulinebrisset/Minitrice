@@ -3,9 +3,9 @@ import sys
 
 # Ajout de la fonction principale
 def main():
-    if len(sys.argv) >= 2 :
-        #Ouverture en écriture du fichier 
-        fichier = open("./results/"+sys.argv[1]+"-result.txt","w")
+    if len(sys.argv) >= 2:
+        # Ouverture en écriture du fichier
+        fichier = open("./results/" + sys.argv[1] + "-result.txt", "w")
     while True:
         try:
             if sys.stdin.isatty():
@@ -18,36 +18,36 @@ def main():
             # Évalue l'expression entrée
             result = eval(user_input)
 
-
-            if len(sys.argv) >= 2 :
-                #Ecriture des resultats dans le fichier  
-                fichier.write(str(result)+"\n")
-            else : 
+            if len(sys.argv) >= 2:
+                # Ecriture des resultats dans le fichier
+                fichier.write(str(result) + "\n")
+            else:
                 # Afficher le résultat
                 print(result)
 
         except EOFError:
-            # Gère le Ctrl+D 
+            # Gère le Ctrl+D
             break
 
         except SyntaxError:
             # Gère les erreurs de syntaxe
-            print(f"Erreur de sytaxe pour le calcul: {user_input}")
-        
-        except ZeroDivisionError : 
-             # Gère la division par zéro
-             print("Division par zéro")
+            print(f"Erreur de syntaxe pour le calcul: {user_input}")
+
+        except ZeroDivisionError:
+            # Gère la division par zéro
+            print("Division par zéro")
         except NameError as e:
-            #Gère les variable non défini
-            er =str(e).split("'")[1]
+            # Gère les variable non défini
+            er = str(e).split("'")[1]
             print(f"la variable '{er}' n'est pas défini ")
     # Si en mode interactif, afficher le message de fin
     if sys.stdin.isatty():
         print("\nFin des calculs :)")
 
-    if len(sys.argv) >= 2 :
+    if len(sys.argv) >= 2:
         fichier.close()
+
+
 if __name__ == "__main__":
     # Si en mode interactif, exécuter la fonction main()
     main()
-
