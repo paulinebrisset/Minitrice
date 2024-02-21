@@ -54,6 +54,12 @@ ou
 ```bash
 1. $ cat good-expression.txt | ./minitrice
 ```
+To save the results in a text file, give the file name on argument to the minitrice program : 
+
+```bash
+1. $ cat good-expression.txt | ./minitrice good-expression
+```
+this command creates a file where all the results of the expressions contained in the X file will be stored.
 
 - Usage with an expression generator
 ```bash
