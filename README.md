@@ -49,12 +49,34 @@ It can be used interactively in a terminal, but also coupled with other programs
 ### Errors and generator
 
 ## Installation
-### Requirements
-- This project is intended to operate within a Linux environment. If you are under Windows, you should 
+
+### Install dependencies
+- Linux environement
+This project is intended to operate within a Linux environment. If you are under Windows, you may wan to install WSL2 to access a linx terminal and run the program. ([See here](https://code.visualstudio.com/docs/remote/wsl) for VSCode)
+
+- Python, v3.9.9
+You will also need the Python programming language installed. Download it [here](https://www.python.org/)
+
 ### Steps 
+- Download the project using the following command line
+
+```bash
+git clone https://github.com/paulinebrisset/minitrice
+``` 
+- Then go in the new folder
+```bash
+cd minitrice
+``` 
+- Set the executable permissions on the files
+```bash
+chmod +x generator
+``` 
+Without setting this permission, the files would not be recognized as executable scripts, and you would need to call them with `python3 generator.py 3` instead of `./generator.py 3`.
+
 
 ## Gourse project's video
-## Usefull links
+## Useful links
+-[Install WSL in Visual Studio Code](https://code.visualstudio.com/docs/remote/wsl)
 
 ## Contributors
 - [Beriche Chahalane](https://github.com/Beriche)
