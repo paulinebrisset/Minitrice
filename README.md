@@ -7,7 +7,7 @@ University python project. The minitrice performs basic operations from command 
 
 It can be used interactively in a terminal, but also coupled with other programs to send data through a pipe. Test files of example expressions as well as an expression generator are provided in this repository.
 
-### Example of use
+### Regular examples of use
 
 - Interactive usage
 ```bash
@@ -46,7 +46,24 @@ It can be used interactively in a terminal, but also coupled with other programs
 3. 7.0
 4. $
 ```
-### Errors and generator
+### Stress the program 
+- 
+- Division by zero
+- Generator
+A few errors are handled by the generator. 
+
+No-argument case : 
+You can call it with no argument like following :
+```bash
+1. $ ./generator
+```
+It will help you to use it properly. 
+Also, you can call it with an out-of-the-range argument number :
+```bash
+1. $ ./generator 8000
+```
+It will ask you to be more reasonable. The expected range is between 1 and 500.
+
 
 ## Installation
 
@@ -71,6 +88,7 @@ cd minitrice
 ```bash
 chmod +x generator
 ``` 
+
 Without setting this permission, the files would not be recognized as executable scripts, and you would need to call them with `python3 generator.py 3` instead of `./generator.py 3`.
 
 
