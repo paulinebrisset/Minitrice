@@ -1,30 +1,34 @@
 #!/usr/bin/env python3
+import sys
 
-
-
-#ajout de la fonction principal
+# Ajout de la fonction principale
 def main():
     while True:
         try:
-            # Invite l'utilisateur à entrer une expression 
-            user_input = input("> ")
-            
-            # Évalue l'expression entrée 
+            if sys.stdin.isatty():
+                # Invite l'utilisateur à entrer une expression
+                user_input = input("> ")
+            else:
+                # Lecture depuis l'entrée non interactive : "echo"
+                user_input = input()
+
+            # Évalue l'expression entrée
             result = eval(user_input)
-            
+
             # Afficher le résultat
             print(result)
 
         except EOFError:
             # Gère le Ctrl+D 
             break
-            
+
         except Exception as e:
-            # Gére les erreurs de calcul 
+            # Gère les erreurs de calcul
             print(f"Erreur de calcul: {str(e)}")
 
-    # Message de fin
-    print("\nFin des calculs :)")
+    # Si en mode interactif, afficher le message de fin
+    if sys.stdin.isatty():
+        print("\nFin des calculs :)")
 
 if __name__ == "__main__":
     # Si en mode interactif, exécuter la fonction main()
