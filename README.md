@@ -20,6 +20,12 @@ It can be used interactively in a terminal, but also coupled with other programs
 7. 0
 8. $ 
 ```
+Interactive case : <br>
+Simply run the script :
+
+```bash
+1. $ ./minitrice
+```
 
 - Usage with cat
 ```bash
@@ -37,6 +43,16 @@ It can be used interactively in a terminal, but also coupled with other programs
 13. $ echo $?
 14. 0
 15. $ 
+```
+No interactive case : <br>
+The code must be executed using either an "echo" or a "cat" following an expression or a file, depending on the command used.
+
+```bash
+1. $ echo "9+1" | ./minitrice
+```
+ou 
+```bash
+1. $ cat good-expression.txt | ./minitrice
 ```
 
 - Usage with an expression generator
@@ -88,14 +104,28 @@ cd minitrice
 ```bash
 chmod +x generator
 ``` 
+and
+```bash
+chmod +x minitrice
+```
 
-Without setting this permission, the files would not be recognized as executable scripts, and you would need to call them with `python3 generator.py 3` instead of `./generator.py 3`.
+Without setting this permission, the files would not be recognized as executable scripts, and you would need to call them with `python3 generator.py 3` and `python3 minitrice.py`  instead of `./generator.py 3` and `./minitrice`.
+
+
+<b>Note:</b>  To permit the minitrice file to be call like "./minitrice" we put on the first line of the file: <br>
+
+```bash
+#!/usr/bin/env python3
+```
+This will let the system know to execute the file as a python script and we don't need to put ".py" at the end of the file.
+
+
 
 
 ## Gourse project's video
 ## Useful links
 -[Install WSL in Visual Studio Code](https://code.visualstudio.com/docs/remote/wsl)
-
+-[import sys](https://docs.python.org/fr/3/library/sys.html)
 ## Contributors
 - [Beriche Chahalane](https://github.com/Beriche)
 - [Lenaic Honorine](https://github.com/LenaicHnr)
