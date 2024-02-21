@@ -94,6 +94,15 @@ The minitrice will raise an alert if you try to divide by zero
 3. Erreur de calcul: division by zero
 4. >
 ```
+- Syntax error
+The minitrice will raise an alert if you make a syntax mistake
+```bash
+1. $ ./minitrice 
+2. > 8+/9
+3. Erreur de syntaxe pour le calcul: 8+/9
+4. >
+```
+
 
 - Generator errors 
 A few errors are handled by the generator. 
