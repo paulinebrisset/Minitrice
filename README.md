@@ -1,17 +1,17 @@
 # Minitrice
 
--[Minitrice](#minitrice)
+- [Minitrice](#minitrice)
     - [Presentation](#presentation)
-        -[Context](#context)
-        -[Regular examples of use](#regular-examples-of-use)
-        -[Stress the program](#stress-the-program)
-    -[Installation](#installation)
-        -[Install dependencies](#install-dependencies)
-        -[Steps](#steps)
+        - [Context](#context)
+        - [Regular examples of use](#regular-examples-of-use)
+        - [Stress the program](#stress-the-program)
+    - [Installation](#installation)
+        - [Install dependencies](#install-dependencies)
+        - [Steps](#steps)
     - [Documentation](#documentation)
         - [Gource project's video](#gource-projects-video)
         - [Useful links](#useful-links)
-    -[Contributors](#contributors)
+    - [Contributors](#contributors)
 
 ## Presentation
 
@@ -160,12 +160,12 @@ This will let the system know how to execute the files, as python scripts, and w
 
 ## Documentation
 ### Gource project's video
-You can watch the progress of the construction of this projet at this link : [Gource video on Youtube]()
+You can watch the progress of the construction of this projet at this link : [Gource video on Youtube](https://youtu.be/wL6XTHdgqfU)
 
 ### Useful links
--[Install WSL in Visual Studio Code](https://code.visualstudio.com/docs/remote/wsl)
--[import sys](https://docs.python.org/fr/3/library/sys.html)
--[Tutorial for Gource use](https://dev.to/voieducode/my-gource-video-production-pipeline-5eb0)
+- [Install WSL in Visual Studio Code](https://code.visualstudio.com/docs/remote/wsl)
+- [import sys](https://docs.python.org/fr/3/library/sys.html)
+- [Tutorial for Gource use](https://dev.to/voieducode/my-gource-video-production-pipeline-5eb0)
 
 ## Contributors
 - [Beriche Chahalane](https://github.com/Beriche)
