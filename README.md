@@ -166,6 +166,8 @@ You can watch the progress of the construction of this projet at this link : [Go
 - [Install WSL in Visual Studio Code](https://code.visualstudio.com/docs/remote/wsl)
 - [import sys](https://docs.python.org/fr/3/library/sys.html)
 - [Tutorial for Gource use](https://dev.to/voieducode/my-gource-video-production-pipeline-5eb0)
+- [Create read and write to a file in python](https://python.doctor/page-lire-ecrire-creer-fichier-python)
+- [Errors and Exceptions](https://docs.python.org/fr/3/tutorial/errors.html)
 
 ## Contributors
 - [Beriche Chahalane](https://github.com/Beriche)
