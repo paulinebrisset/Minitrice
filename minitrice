@@ -16,7 +16,7 @@ def main():
                 user_input = input()
 
             # Évalue l'expression entrée
-            result = eval(user_input)
+            result = round(eval(user_input),2)
 
             if len(sys.argv) >= 2:
                 # Ecriture des resultats dans le fichier
