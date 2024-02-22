@@ -133,7 +133,7 @@ You will also need the Python programming language installed. Download it [here]
 - Download the project using the following command line
 
 ```bash
-git clone https://github.com/paulinebrisset/minitrice
+git clone https://github.com/paulinebrisset/git-evaluation_groupe-2
 ``` 
 - Then go in the new folder
 ```bash
